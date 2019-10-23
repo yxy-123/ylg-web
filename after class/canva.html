@@ -12,7 +12,14 @@ style="border:1px solid snow;"></canvas>
     var c=document.getElementById("cns");
 var cn=c.getContext("2d");
 cn.font="30px Arial";
-cn.fillText("Hello World",10,50);
+for(var i=0;;i++)
+{
+cn.fillText("Hello World",i,50);
+if(i>300)
+{
+    i=0;
+}
+}
 </script>
 <a href="#" onClick="javascript:history.back(-1);">返回上一页</a>
 <!--返回上一页-->
