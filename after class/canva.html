@@ -4,9 +4,16 @@
     <link rel="stylesheet"  href="../css/aftc.css"/>
 </head>
 
-</br><br/>
-<a href="">canvas测试</a>
-<br/>
+</br>
+
+<canvas id="cns" width="200" height="100"
+style="border:1px solid snow;"></canvas>
+<script>
+    var c=document.getElementById("cns");
+var cn=c.getContext("2d");
+cn.font="30px Arial";
+cn.fillText("Hello World",10,50);
+</script>
 <a href="#" onClick="javascript:history.back(-1);">返回上一页</a>
 <!--返回上一页-->
     
