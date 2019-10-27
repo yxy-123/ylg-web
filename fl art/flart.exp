@@ -11,7 +11,7 @@
           el: '#vssue',
           render: h => h('Vssue', {
             props: {
-              title: 'talk',
+              title: '',
               options: {
                 owner: 'yxy-123',
                 repo: 'pl-try',
