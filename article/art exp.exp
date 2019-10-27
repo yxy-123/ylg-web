@@ -1,0 +1,27 @@
+<head>
+<link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+</head>
+
+<body>
+  <h1>Vssue Demo For Browser: GitHub</h1>
+  <div id="vssue"></div>
+  <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+  <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+  <!-- <script src="https://unpkg.com/vssue/dist/vssue.github-v4.min.js"></script> -->
+  <script>
+    new Vue({
+      el: '#vssue',
+      render: h => h('Vssue', {
+        props: {
+          title: 'vsud',
+          options: {
+            owner: 'yxy-123',
+            repo: 'pl-try',
+            clientId: '3649b3af576d88f38c4f',
+            clientSecret: 'dc5809104490d3da9c7a5cda2050921865a29f1e',
+          },
+        }
+      })
+    })
+  </script>
+</body>
