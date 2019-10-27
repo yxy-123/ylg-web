@@ -3,22 +3,25 @@
 </head>
 
 <body>
-  <h1>Vssue Demo For Browser: GitHub</h1>
+<!--article strat-->
+
+
+<!--article end-->
   <div id="vssue"></div>
   <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
   <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
-  <!-- <script src="https://unpkg.com/vssue/dist/vssue.github-v4.min.js"></script> -->
+  
   <script>
     new Vue({
       el: '#vssue',
       render: h => h('Vssue', {
         props: {
-          title: 'vsud',
+          title: 'talk',
           options: {
             owner: 'yxy-123',
-            repo: 'pl-try',
-            clientId: '3649b3af576d88f38c4f',
-            clientSecret: 'dc5809104490d3da9c7a5cda2050921865a29f1e',
+            repo: 'ylg-web',
+            clientId: '76cb28cf0a78ab179dc5',
+            clientSecret: '442afb01abc9b82a20c2d8d9bbfa17ee2df234bf',
           },
         }
       })
