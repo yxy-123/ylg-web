@@ -1,4 +1,34 @@
-<h1>Hello, Article!</h1>
+<head>
+    <title>Hello Article</title>
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+    </head>
+    
+    <body>
+    <!--article strat-->
+    <h1>Hello,Article</h1>
+    
+    <!--article end-->
+      <div id="vssue"></div>
+      <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+      <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+      
+      <script>
+        new Vue({
+          el: '#vssue',
+          render: h => h('Vssue', {
+            props: {
+              title: 'talk',
+              options: {
+                owner: 'yxy-123',
+                repo: 'ylg-web',
+                clientId: '76cb28cf0a78ab179dc5',
+                clientSecret: '442afb01abc9b82a20c2d8d9bbfa17ee2df234bf',
+              },
+            }
+          })
+        })
+      </script>
+      <a href="#" onClick="javascript:history.back(-1);">返回上一页</a>
+    </body>
 
-<a href="#" onClick="javascript:history.back(-1);">返回上一页</a>
 <!--返回上一页-->
